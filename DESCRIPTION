@@ -1,11 +1,37 @@
 Package: spEDM.engine
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Engine for Spatial Empirical Dynamic Modeling
+Version: 1.7
 Authors@R: 
-    person("Wenbo", "Lv", , "lyu.geosocial@gmail.com", role = c("aut", "cre"),
+    person(given = "Wenbo", family = "Lv",
+           email = "lyu.geosocial@gmail.com", 
+           role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0002-6003-3800"))
-Description: What the package does (one paragraph).
+Description: Inferring causation from spatial cross-sectional data through empirical dynamic modeling (EDM), with methodological extensions including geographical convergent cross mapping from Gao et al. (2023) <doi:10.1038/s41467-023-41619-6>, as well as the spatial causality test following the approach of Herrera et al. (2016) <doi:10.1111/pirs.12144>.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+URL: https://spatlyu.github.io/spEDM.engine/, https://github.com/spatlyu/spEDM.engine
+BugReports: https://github.com/spatlyu/spEDM.engine/issues
+Depends: 
+    R (>= 4.1.0)
+LinkingTo: 
+    Rcpp,
+    RcppThread,
+    RcppArmadillo
+Imports: 
+    dplyr,
+    ggplot2,
+    methods,
+    sdsfun (>= 0.7.0),
+    sf,
+    terra
+Suggests: 
+    knitr,
+    Rcpp,
+    RcppThread,
+    RcppArmadillo,
+    rmarkdown,
+    readr,
+    plot3D
+VignetteBuilder: knitr
